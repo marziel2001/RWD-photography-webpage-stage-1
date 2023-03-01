@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="porownanie.css">
+	<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+	<script src="main.js"></script>
+	<script src="jquery-3.6.0.min.js"></script>	
+	<script src="porownanie.js"></script>
+	<title>
+		Moje Hobby
+	</title>
+</head>
+
+
+<body>
+
+	<div class="gContainer">
+	 	<header>
+			<div class="title">
+				<h1>
+					Fotografia
+				</h1>
+			</div>
+
+			<nav>
+				<label for="Mmenu" id="mainMenuLabel">Menu</label>
+				<input type="checkbox" id="Mmenu">
+					<ul class="navMenu">
+						<li><a href="index.html">Strona główna</a></li>
+						<li><a href="gallery.html">Galeria</a></li>
+						<li>
+								<label for="drop"><a  class="activePage">Ciekawe materiały</a></label>
+								<input type="checkbox" id="drop">
+								<ul class="dropdown">
+									<li><a href="form.html">Wycena odbitek</a></li>
+									<li><a href="polecaneVid.html">Filmiki do obejrzenia</a></li>
+									<li><a href="porownanie.html"  class="activePage">Najnowsze porównanie sprzętu</a></li>
+								</ul>
+						</li>
+						<li><a href="oMnie.html">O mnie</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+
+
+		<main>
+			<div id="switchColor"></div>
+			<h1>
+				Porównanie Nikon Z6 vs Sony A7 mark III
+			</h1>
+			<input id="search" type="text" placeholder="Wyszukaj:">
+			<br>
+			<table>
+			<thead>
+				<tr>
+					<th>vs. </th>
+					<th>Nikon Z6</th>
+					<th>Sony A7 III</th>
+				</tr>
+			</thead>
+				
+			<tbody  id="comp">				
+					<tr>
+						<td>Matryca</td>
+						<td>24MP - Pełna klatka</td>
+						<td>24MP - Pełna klatka</td>
+					</tr>
+					<tr>
+						<td>Rozdzielczość filmu</td>
+						<td>4K@30FPS / 1080P@120FPS</td>
+						<td>4K@30FPS / 1080P@120FPS</td>
+					</tr>
+					<tr>
+						<td>ISO</td>
+						<td>50 - 204800</td>
+						<td>50 - 204800</td>
+					</tr>
+					<tr>
+						<td>Czasy otwarcia migawki</td>
+						<td>1/8000 do 30s</td>
+						<td>1/8000 do 30s</td>
+					</tr>
+					<tr>
+						<td>Wspierane Karty pamięci</td>
+						<td>XQD - 1x</td>
+						<td>2x - (SD) UHS-II + UHS I</td>
+					</tr>
+					<tr>
+						<td>Stabilizacja matrycy</td>
+						<td>Tak</td>
+						<td>Tak</td>
+					</tr>
+					<tr>
+						<td>Rozdzielczość wizjera</td>
+						<td>3 690 000 px</td>
+						<td>2 359 000 px</td>
+					</tr>
+					<tr>
+						<td>Rozdzielczość LCD</td>
+						<td>2 100 000 px</td>
+						<td>921 600 px</td>
+					</tr>
+					<tr>
+						<td>Górny ekran</td>
+						<td>Tak</td>
+						<td>Nie</td>
+					</tr>
+					<tr>
+						<td>Waga</td>
+						<td>675g</td>
+						<td>650g</td>
+					</tr>
+					<tr>
+						<td>Punkty AF</td>
+						<td>272 PDAF</td>
+						<td>693 PDAF + 425 CDAF</td>
+					</tr>
+					<tr>
+						<td>Migawka elektroniczna</td>
+						<td>Tak</td>
+						<td>Tak</td>
+					</tr>
+					<tr>
+						<td>Ilość zdjęć na baterii </td>
+						<td>1100-1300</td>
+						<td>1400-1500</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+			
+			
+
+
+
+
+
+				<noscript>
+					<h6 style="padding: 1rem;">
+						Ta strona używa JavaScript. Aby uzyskać pełną funkcjonalność włącz obsługę JavaScript w swojej przeglądarce.
+					</h6>
+				</noscript>
+				
+
+		</main>
+
+		<footer>
+			<h2>
+				&copy;Marcel Zieliński 
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Poprawny CSS!" />
+    			</a>
+			</h2>
+		</footer> 
+	</div>
+	
+</body>
+</html>

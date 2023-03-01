@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+	
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.13.0.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="jquery-ui-1.13.0.custom/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="jquery-ui-1.13.0.custom/jquery-ui.theme.min.css">
+	<script src="polecane.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="polecaneVid.css">
+	<title>
+		Moje Hobby
+	</title>
+</head>
+
+<body>
+
+	<div class="gContainer">
+	 	<header>
+			<div class="title">
+				<h1>
+					Fotografia
+				</h1>
+			</div>
+
+			<nav>
+				<label for="Mmenu" id="mainMenuLabel">Menu</label>
+				<input type="checkbox" id="Mmenu">
+					<ul class="navMenu">
+						<li><a href="index.html">Strona główna</a></li>
+						<li><a href="gallery.html">Galeria</a></li>
+						<li>
+								<label for="drop"><a  class="activePage">Ciekawe materiały</a></label>
+								<input type="checkbox" id="drop">
+								<ul class="dropdown">
+									<li><a href="form.html">Wycena odbitek</a></li>
+									<li><a href="polecaneVid.html"  class="activePage">Filmiki do obejrzenia</a></li>
+									<li><a href="porownanie.html">Najnowsze porównanie sprzętu</a></li>
+								</ul>
+						</li>
+						<li><a href="oMnie.html">O mnie</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+		<main><div id="switchColor"></div>
+			<h1>
+				Polecane kanaly na YT
+			</h1>
+		
+			<p>
+				Ponieważ nie ma filmu który nauczy wszystkiego 
+				i odpowie na wszystkie pytania, chciałbym Ci polecić 
+				następujące kanaly na serwisie YouTube:
+			</p>
+
+			<noscript>
+				<h6 style="padding: 1rem;">
+					Ta strona używa JavaScript. Aby uzyskać pełną funkcjonalność włącz obsługę JavaScript w swojej przeglądarce.
+				</h6>
+			</noscript>
+
+			<div id="tabs">
+				<ul>
+				  <li><a href="#polecane1">T&Ch</a></li>
+				  <li><a href="#polecane2">Manny</a></li>
+				  <li><a href="#polecane3">Pierre</a></li>
+				  <li><a href="#polecane4">DR5000.com</a></li>
+				  <li><a href="#polecane5">Fotoblysk.com</a></li>
+				</ul>
+
+				<div id="polecane1">
+					<div class="YTwrapper">
+						<div class="a16to9">
+							<iframe src="https://www.youtube.com/embed/JwT5WzsaXv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+					
+					<a class="YTlink" href="https://www.youtube.com/c/TonyNorthrup" target="_blank">Tony & Chelsea Northrup - jeden z największych kanałów w USA na temat fotografii ogólnie</a>
+				</div>
+
+				<div id="polecane2">
+					<div class="YTwrapper">
+						<div class="a16to9">
+							<iframe src="https://www.youtube.com/embed/8JG7ng5i3bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					
+					<a class="YTlink"  href="https://www.youtube.com/c/MannyOrtiz" target="_blank">Manny Ortiz - fotografia portretowa</a>
+				</div>
+
+				<div id="polecane3">
+					<div class="YTwrapper">
+						<div class="a16to9">
+						<iframe src="https://www.youtube.com/embed/9KdAILt7PAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					
+					<a class="YTlink"  href="https://www.youtube.com/c/PierreTLambert101" target="_blank">Pierre T. Lambert - fotografia street</a>
+				</div>
+
+				<div id="polecane4">
+					<div class="YTwrapper">
+						<div class="a16to9">
+							<iframe src="https://www.youtube.com/embed/aiLEGaokOIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					
+					<a class="YTlink"  href="https://www.youtube.com/c/DR5000com" target="_blank">DR5000 - fotografia ślubna - Polska</a>
+				</div>
+
+				<div id="polecane5">
+					<div class="YTwrapper">
+						<div class="a16to9">
+							<iframe src="https://www.youtube.com/embed/zlJSTiihAf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					
+					<a class="YTlink"  href="https://www.youtube.com/c/Fotoblyskblogfoto" target="_blank">FotoBlysk.com - fotografia portretowa - Polskie poradniki, bardzo przystępnie podana wiedza</a>
+				</div>
+
+			  </div>
+			
+		</main>
+
+		<footer>
+			<h2>
+				&copy;Marcel Zieliński 
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Poprawny CSS!" />
+    			</a>
+			</h2>
+		</footer> 
+	</div>
+	
+
+
+
+
+
+
+
+
+	
+</body>
+</html>

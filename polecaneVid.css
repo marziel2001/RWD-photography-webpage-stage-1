@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+ 
+}
+main > * {
+    color: white;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+main ul li {
+	
+	list-style-type: square;
+}
+main ul a {
+	text-decoration: none;
+	color: gold;
+}
+.ui-tabs {
+	margin-bottom: 2em;
+
+	background-color: rgb(255, 0, 0);
+	border-width: 0 !important;
+	padding: 5px;
+}
+.ui-tabs-nav {
+	border: 4px solid rgb(155, 155, 155);
+overflow: hidden;
+background-color: rgb(143, 143, 143);
+}
+.ui-tabs-panel {
+	padding: 1em 20% 1em 20% !important;
+	background-color: rgb(24, 24, 24) !important;
+}
+.YTwrapper {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: rgba(255, 0, 0, 0);
+}
+.a16to9 {
+	position: relative;
+	display: block;
+	background-color: rgba(0, 0, 255, 0);
+	width: 100%;
+	height: auto;
+	padding-top: 56.25%;
+
+}
+.YTlink {
+	text-align: center;
+	display: block;
+	padding-top: 1em ;
+	color: gold !important;
+	text-decoration: none;
+}
+iframe {
+	object-fit: cover;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+	/* _______ ______ _      ______ ______ ____  _   _ 
+	|__   __|  ____| |    |  ____|  ____/ __ \| \ | |
+	   | |  | |__  | |    | |__  | |__ | |  | |  \| |
+	   | |  |  __| | |    |  __| |  __|| |  | | . ` |
+	   | |  | |____| |____| |____| |   | |__| | |\  |
+	   |_|  |______|______|______|_|    \____/|_| \_|
+													   */
+    div.gContainer {
+	grid-template-areas: 'head'		
+						'main'
+						'main'
+						'foot';
+    }
+	main {
+		padding: 1rem 2rem 1rem 2rem;
+	}
+	main h1 {
+		margin-bottom: 2rem;
+	}
+	main ul {
+		margin: 2rem 1rem 2rem 2rem;
+	}
+	main p {
+		text-align: justify;
+		margin-bottom: 1rem;
+	}
+	.ui-tabs-panel {
+		padding: 1em 5% 1em 5% !important;
+	}
+
+}
+
+@media only screen and (min-width: 1000px), (orientation: landscape) {
+	/* _  ______  __  __ _____  _    _ _______ ______ _____  
+	| |/ / __ \|  \/  |  __ \| |  | |__   __|  ____|  __ \ 
+	| ' / |  | | \  / | |__) | |  | |  | |  | |__  | |__) |
+	|  <| |  | | |\/| |  ___/| |  | |  | |  |  __| |  _  / 
+	| . \ |__| | |  | | |    | |__| |  | |  | |____| | \ \ 
+	|_|\_\____/|_|  |_|_|     \____/   |_|  |______|_|  \_\
+														   
+														    */
+div.gContainer {
+	grid-template-areas: 'head head head'		
+						'main main main'
+						'foot foot foot';
+
+}
+main {
+	padding: 0 20% 0 20%;
+}
+main ul {
+	margin-left: 3rem;
+}
+main p {
+	margin-bottom: 1em;
+}
+
+}

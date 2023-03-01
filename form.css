@@ -1,0 +1,169 @@
+body {
+    background-color: black;
+ 
+}
+main > * {
+    color: white;
+}
+
+main > h1 {
+	margin: 1rem;
+    text-align: center;
+}
+input[type="number"],
+input[type="text"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="reset"],
+input[type="submit"],
+input[type="checkbox"],
+select
+{
+	margin-bottom: 0.6rem;
+	color: white;
+	padding: 0.4rem;
+	background-color: rgba(0, 0, 0, 0.116);
+	border-radius: 5px;
+	margin-left: 1em;
+	border-top: 2px solid rgb(216, 216, 216);
+	border-right: 2px solid rgb(212, 212, 212);
+	border-bottom: 2px solid rgb(94, 94, 94);
+	border-left: 2px solid rgb(94, 94, 94);
+	vertical-align: middle;
+}
+option {
+	background-color: red;
+}
+input[type="checkbox"] {
+	width: 2em;
+	height: 1.5em;
+	margin: 0 0 0 1em;
+	
+}
+#orderMore {
+	background-color: rgba(0, 0, 0, 0.068);
+	border-radius: 10px;
+	padding: 0.5rem;
+	margin: 0.5rem;
+	width: max-content;
+	font-size: 0.8em;
+}
+#orderMore:hover {
+	filter: brightness(0.8);
+	cursor: pointer;
+}
+#ilosc {
+	width: 6em;
+}
+#note {
+	position: relative;
+	left: 1rem;
+	bottom: 0rem;
+	font-size: 0.8rem;
+	opacity: 0.7;
+	margin-top: 0.5rem;
+}
+.ui-dialog {
+	background-color: rgb(255, 88, 88);
+	border: 4px solid red !important;
+}
+.ui-dialog-titlebar {
+	background-color: rgb(255, 131, 131);
+	border: 4px solid rgb(255, 152, 152) !important;
+}
+.ui-dialog-titlebar-close {
+	background-color: rgb(255, 88, 88) !important;
+	border: 2px solid rgb(255, 152, 152) !important;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  /* _______ ______ _      ______ ______ ____  _   _ 
+	|__   __|  ____| |    |  ____|  ____/ __ \| \ | |
+	   | |  | |__  | |    | |__  | |__ | |  | |  \| |
+	   | |  |  __| | |    |  __| |  __|| |  | | . ` |
+	   | |  | |____| |____| |____| |   | |__| | |\  |
+	   |_|  |______|______|______|_|    \____/|_| \_|
+													   */
+    div.gContainer {
+	grid-template-areas: 'head'		
+						'main'
+						'main'
+						'foot';
+    }
+	main {
+		padding: 1rem 2rem 1rem 2rem;
+	}
+	.formWrap{
+		font-size: 1.2em;
+		border-radius: 20px;
+		padding: 2rem;
+		display: grid;
+		background-color: rgb(255, 56, 56);
+		width: 90%;
+		height: auto;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		justify-content: center;
+		overflow: hidden;
+	
+	}
+	.aparatSvg {
+		filter: blur(2px);
+		z-index: -1;
+		height: 15rem;
+		position: absolute;
+		left: 85%;
+		top: 80%;
+		transform: translate(-50%, -50%) rotate(-30deg);
+	
+	}
+}
+
+@media only screen and (min-width: 1000px), (orientation: landscape) {
+  /* _  ______  __  __ _____  _    _ _______ ______ _____  
+	| |/ / __ \|  \/  |  __ \| |  | |__   __|  ____|  __ \ 
+	| ' / |  | | \  / | |__) | |  | |  | |  | |__  | |__) |
+	|  <| |  | | |\/| |  ___/| |  | |  | |  |  __| |  _  / 
+	| . \ |__| | |  | | |    | |__| |  | |  | |____| | \ \ 
+	|_|\_\____/|_|  |_|_|     \____/   |_|  |______|_|  \_\
+														   
+														    */
+div.gContainer {
+	grid-template-areas: 'head head head'		
+						'main main main'
+						'foot foot foot';
+
+}
+.formWrap{
+	border-radius: 20px;
+	padding: 2rem;
+	display: grid;
+
+	background-color: rgb(255, 42, 42);
+	width: 40%;
+	height: auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	justify-content: center;
+	overflow: hidden;
+
+}
+form {
+	width: auto;
+	height: auto;
+}
+.aparatSvg {
+	filter: blur(2px);
+	z-index: -1;
+	height: 15rem;
+	position: absolute;
+	left: 85%;
+	top: 80%;
+	transform: translate(-50%, -50%) rotate(-30deg);
+
+}
+
+}

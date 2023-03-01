@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+ 
+}
+main > * {
+    color: white;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+	/* _______ ______ _      ______ ______ ____  _   _ 
+	|__   __|  ____| |    |  ____|  ____/ __ \| \ | |
+	   | |  | |__  | |    | |__  | |__ | |  | |  \| |
+	   | |  |  __| | |    |  __| |  __|| |  | | . ` |
+	   | |  | |____| |____| |____| |   | |__| | |\  |
+	   |_|  |______|______|______|_|    \____/|_| \_|
+													   */
+    div.gContainer {
+	grid-template-areas: 'head'		
+						'main'
+						'main'
+						'foot';
+    }
+	main {
+		padding: 1rem 2rem 1rem 2rem;
+	}
+	.aboutMeGrid {
+		margin-top: 1rem;
+		border-radius: 30px;
+		overflow: hidden;
+		background-color: rgb(150, 0, 0);
+		height: auto;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+	}
+	.aboutMeText {
+		
+		font-size: 1.2rem;
+		text-align: left;
+		padding: 1rem 1.3rem 2rem 1.4rem;
+	}
+	.aboutMeText p {
+		text-align: justify;
+
+	}
+	.aboutMePhoto img {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+}
+
+@media only screen and (min-width: 1000px), (orientation: landscape) {
+	/* _  ______  __  __ _____  _    _ _______ ______ _____  
+	| |/ / __ \|  \/  |  __ \| |  | |__   __|  ____|  __ \ 
+	| ' / |  | | \  / | |__) | |  | |  | |  | |__  | |__) |
+	|  <| |  | | |\/| |  ___/| |  | |  | |  |  __| |  _  / 
+	| . \ |__| | |  | | |    | |__| |  | |  | |____| | \ \ 
+	|_|\_\____/|_|  |_|_|     \____/   |_|  |______|_|  \_\
+														   
+														    */
+div.gContainer {
+	grid-template-areas: 'head head head'		
+						'main main main'
+						'foot foot foot';
+
+}
+main {
+	padding: 2rem 15rem 5rem 15rem;
+}
+
+.aboutMeGrid {
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: rgb(150, 0, 0);
+	height: auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-template-rows: auto;
+}
+.aboutMeText {
+	font-size: 1.2rem;
+	text-align: left;
+	padding: 2rem 2rem 1rem 3rem;
+}
+.aboutMeText p {
+	text-align: justify;
+	
+}
+.aboutMePhoto img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+}

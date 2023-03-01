@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+	<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+
+	<script defer src="gallery.js"></script>
+	<script src="main.js"></script>
+	<title>
+		Moje Hobby
+	</title>
+</head>
+
+
+<body>
+
+	<div class="gContainer">
+	 	<header>
+			<div class="title">
+				<h1>
+					Fotografia
+				</h1>
+			</div>
+
+			<nav>
+				<label for="Mmenu" id="mainMenuLabel">Menu</label>
+				<input type="checkbox" id="Mmenu">
+					<ul class="navMenu">
+						<li><a href="index.html" >Strona główna</a></li>
+						<li><a href="gallery.html" class="activePage">Galeria</a></li>
+						<li>
+								<label for="drop"><a>Ciekawe materiały</a></label>
+								<input type="checkbox" id="drop">
+								<ul class="dropdown">
+									<li><a href="form.html">Wycena odbitek</a></li>
+									<li><a href="polecaneVid.html">Filmiki do obejrzenia</a></li>
+									<li><a href="porownanie.html">Najnowsze porównanie sprzętu</a></li>
+								</ul>
+						</li>
+						<li><a href="oMnie.html">O mnie</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+
+
+		<main>
+			<div id="switchColor"></div>
+			<h1>
+				Galeria zdjęć
+			</h1>
+			<noscript>
+					<h6 style="padding: 1rem;">
+						Ta strona używa JavaScript. Aby uzyskać pełną funkcjonalność włącz obsługę JavaScript w swojej przeglądarce.
+					</h6>
+			</noscript>
+			
+			<label for="howManyPerRow">Ilość kolumn: </label>
+			<input type="range" max="6" min="2" step="1" id="howManyPerRow" list="steps">
+	
+
+				<div class="gridGall">
+
+					<div class="wrapper">
+					<div class="imgContainer">
+					<a href="images/maxRes/MG1.jpg">
+					<img src="images/thumbnails/MG1.jpg" alt="zdjecie_w_galerii">
+					</a>
+					</div>
+					<h3>Sony A7<span class="heart" id="Ph1"></span></h3>
+					</div>
+
+					<div class="wrapper">
+					<div class="imgContainer">
+					<a href="images/maxRes/MG2.jpg">
+					<img src="images/thumbnails/MG2.jpg" alt="zdjecie_w_galerii">
+					</a>
+					</div>
+					<h3>Park Kajki - Elbląg<span class="heart" id="Ph2"></span></h3>
+					</div>
+
+					<div class="wrapper">
+					<div class="imgContainer">
+					<a href="images/maxRes/MG3.jpg">
+					<img src="images/thumbnails/MG3.jpg" alt="zdjecie_w_galerii">
+					</a>
+					</div>
+					<h3>Zloty samochodowe na Modrzewinie<span class="heart" id="Ph3"></span></h3>
+					</div>
+
+					<div class="wrapper">
+					<div class="imgContainer">
+					<a href="images/maxRes/MG4.jpg">
+					<img src="images/thumbnails/MG4.jpg" alt="zdjecie_w_galerii">
+					</a>
+					</div>
+					<h3>Pierwsze malowanie światłem<span class="heart" id="Ph4"></h3>
+					</div>
+
+					<div class="wrapper">
+					<div class="imgContainer">
+					<a href="images/maxRes/MG7.jpg">
+					<img src="images/thumbnails/MG7.jpg" alt="zdjecie_w_galerii">
+					</a>
+					</div>
+					<h3>V Elbląski bieg niepodleglości<span class="heart" id="Ph7"></span></h3>
+					</div>
+
+					<div class="wrapper">
+					<div class="imgContainer">
+					<a href="images/maxRes/MG5.jpg">
+					<img src="images/thumbnails/MG5.jpg" alt="zdjecie_w_galerii">
+					</a>
+					</div>
+					<h3>BMW M4 Verva SR<span class="heart" id="Ph5"></span></h3>
+					</div>
+									
+					<div class="wrapper">
+						<div class="imgContainer">
+						<a href="images/maxRes/MG8.jpg">
+						<img src="images/thumbnails/MG8.jpg" alt="zdjecie_w_galerii">
+						</a>
+						</div>
+						<h3>Natura<span class="heart" id="Ph8"></span></h3>
+					</div>
+
+					<div class="wrapper">
+						<div class="imgContainer">
+						<a href="images/maxRes/MG9.jpg">
+						<img src="images/thumbnails/MG9.jpg" alt="zdjecie_w_galerii">
+						</a>
+						</div>
+						<h3>Sony A7<span class="heart" id="Ph9"></span></h3>
+					</div>
+
+					<div class="wrapper">
+						<div class="imgContainer">
+						<a href="images/maxRes/MG10.jpg">
+						<img src="images/thumbnails/MG10.jpg" alt="zdjecie_w_galerii">
+						</a>
+						</div>
+						<h3>Elbląskie niebo nocą<span class="heart" id="Ph10"></span></h3>
+					</div>
+
+					<div class="wrapper">
+						<div class="imgContainer">
+						<a href="images/maxRes/MG11.jpg">
+						<img src="images/thumbnails/MG11.jpg" alt="zdjecie_w_galerii">
+						</a>
+						</div>
+						<h3>Pociągi w Tarnowie<span class="heart" id="Ph11"></span></h3>
+					</div>
+
+					<div class="wrapper">
+						<div class="imgContainer">
+						<a href="images/maxRes/MG12.jpg">
+						<img src="images/thumbnails/MG12.jpg" alt="zdjecie_w_galerii">
+						</a>
+						</div>
+						<h3>Piękna Krynica Zdrój<span class="heart" id="Ph12"></span></h3>
+					</div>
+
+					<div class="wrapper">
+						<div class="imgContainer">
+						<a href="images/maxRes/MG13.jpg">
+						<img src="images/thumbnails/MG13.jpg" alt="zdjecie_w_galerii">
+						</a>
+						</div>
+						<h3>Tarnowska Bawarka<span class="heart" id="Ph13"></span></h3>
+					</div>
+				</div>
+				
+	
+		</main>
+
+		<footer>
+			<h2>
+				&copy;Marcel Zieliński 
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Poprawny CSS!" />
+    			</a>
+			</h2>
+		</footer> 
+	</div>
+	
+</body>
+</html>
